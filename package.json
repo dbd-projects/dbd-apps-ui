@@ -1,0 +1,24 @@
+{
+  "name": "dbd-apps-ui",
+  "version": "1.0.0",
+  "description": "The main UI for the dbd applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbd-projects/dbd-apps-ui.git"
+  },
+  "author": "Lowell Buttorff",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dbd-projects/dbd-apps-ui/issues"
+  },
+  "homepage": "https://github.com/dbd-projects/dbd-apps-ui#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}
