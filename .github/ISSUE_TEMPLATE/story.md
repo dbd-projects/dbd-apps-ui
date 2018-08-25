@@ -6,7 +6,8 @@ about: Story to support a feature
 
 ## Description
 Describe the story briefly and how it brings us closer to achieving the feature.
-Link the feature in the panel to the right.
+
+Link the feature (project) in the panel to the right or if the feature is in an issue, link that here.
 
 ## Tasks
 
