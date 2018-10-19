@@ -1,9 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 
-const router = require('./router');
-
+const buildRouter = require('./build_router');
 const app = express();
+
+const port = 3000;
 
 // Set the view template to pug
 app.set('view engine', 'pug');
@@ -13,7 +14,15 @@ app.use(cookieParser());
 app.use(express.static('public'));
 
 // Set router(s)
-app.use('/', router);
+app.use('/app/builder', buildRouter);
+/*app.get('/app/*', (req, res) => {
+    console.info("Serving request to ", req.route.methods, req.route.path);
+    res.render('under_construction');
+});*/
+app.get('/', (req, res) => {
+    console.info("Serving request to ", req.route.methods, req.route.path);
+    res.render('main_view');
+});
 
 // Set port for the server
-app.listen(3000);
+app.listen(port, () => console.info('dbd-apps-ui running on port: ', port));

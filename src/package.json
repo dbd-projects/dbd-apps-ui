@@ -1,7 +1,7 @@
 {
   "name": "dbd-apps-ui",
-  "version": "1.0.0",
-  "description": "The main UI for the dbd applications",
+  "version": "0.1.0",
+  "description": "The UI for dbd applications",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
