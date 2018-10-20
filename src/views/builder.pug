@@ -5,13 +5,82 @@ html
         link(rel="shortcut icon", type="image/x-icon", href="/images/favicon.ico")
         link(rel="stylesheet", type="text/css", href="/css/bootstrap.min.css")
         link(rel="stylesheet", type="text/css", href="/css/themes.css")
+        link(rel="stylesheet", type="text/css", href="/css/main.css")
     body#theBody
         script(type="text/javascript", src="/js/themes.js")
         include header
 
-        div.align-content-center
-            p.text-center#people Hello World! This is temporary but will be a real front page soon!
-            p.text-hide.text-center#hiddenText Also, Chuck is a pleb...
+        div.container#main-container
+            div.row
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Character
+                            button.btn.btn-primary#charBtn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Item
+                            button.btn.btn-primary#itemBtn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Addon 1
+                            button.btn.btn-primary#addon1Btn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Addon 2
+                            button.btn.btn-primary#addon2Btn(data-toggle="modal" data-target="#selectorModal") Select
+            br
+            div.row
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Perk 1
+                            button.btn.btn-primary#perk1Btn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Perk 2
+                            button.btn.btn-primary#perk2Btn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Perk 3
+                            button.btn.btn-primary#perk3Btn(data-toggle="modal" data-target="#selectorModal") Select
+                div.col-md
+                    div.card
+                        img.card-img-top(src="/images/favicon.ico")
+                        div.card-body
+                            h5.card-title Perk 4
+                            button.btn.btn-primary#perk4Btn(data-toggle="modal" data-target="#selectorModal") Select
+        div.modal.fade#selectorModal(tabindex="-1" role="dialog")
+            div.modal-dialog(role="document")
+                div.modal-content
+                    div.modal-header
+                        h5.modal-title#selectModalTitle Select
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") &times;
+                    div.modal-body
+                        div.btn-group-vertical
+                            button.btn.btn-lg.btn-primary(data-dismiss="modal") billy
+                        nav
+                            ul.pagination
+                                li.page-item
+                                    a.page-link(href="#") Previous
+                                li.page-item
+                                    a.page-link(href="#") Next
+                    div.modal-footer
+                        button.btn.btn-secondary(type="button" data-dismiss="modal") Close
+                        button.btn.btn-primary(type="button") Save changes
 
         script(type="text/javascript", src="/js/jquery-3.3.1.min.js")
         script(type="text/javascript", src="/js/bootstrap.min.js")
