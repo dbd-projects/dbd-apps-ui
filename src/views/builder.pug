@@ -17,7 +17,7 @@ html
                         img.card-img-top(src="/images/favicon.ico")
                         div.card-body
                             h5.card-title Character
-                            button.btn.btn-primary#charBtn(data-toggle="modal" data-target="#selectorModal") Select
+                            button.btn.btn-primary#charBtn(data-toggle="modal" data-target="#selectorModal" onclick="updateList(this)") Select
                 div.col-md
                     div.card
                         img.card-img-top(src="/images/favicon.ico")
@@ -84,3 +84,4 @@ html
 
         script(type="text/javascript", src="/js/jquery-3.3.1.min.js")
         script(type="text/javascript", src="/js/bootstrap.min.js")
+        script(type="text/javascript", src="/js/builder.js")
